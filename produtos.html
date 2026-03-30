@@ -4,16 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Produtos</title>
 </head>
 
 <body>
     <header>
-        <h5><a href="index.html">Voltar</a></h5>
         <section>
-            <img src="img/logouniversopet.png" width="100" height="100" alt="Logo">
-            <h1>Universo Pet - Todos os Produtos</h1>
-            <p> Aqui você encontra todos os produtos que seu pet precisa! Rações, brinquedos, acessórios e muito mais.</p>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">🐾 Universo Pet</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contatos.html">Contatos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
         </section>
     </header>
@@ -21,82 +37,149 @@
     <main>
         <section id="Categoria1-Rações">
             <h2>RAÇÕES</h2>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- cards aqui -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/raçãocachorro.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Ração Gran Plus</h5>
+                                <p class="card-text">A Ração GranPlus Menu Light Frango e Arroz para Cães Adultos Raças
+                                    Médias e
+                                    Grandes é um alimento de alta qualidade, indicado para cães com tendência a
+                                    engordar, indoor ou castrados, que tem como objetivo ajudá-los a manter o peso
+                                    ideal, além de preservar a massa muscular. Sua fórmula foi especialmente
+                                    desenvolvida com fibras funcionais, que garantem o controle da saciedade.</p>
+                                <p class="text-success">R$ 64,99</p>
+                                <button class="btn btn-primary" onclick="comprar()">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/raçãogato.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Quatree</h5>
+                        <p class="card-text">Armazene em um local fresco, seco, fora de contato com a luz solar direta e
+                            fora do alcance de animais de estimação</p>
+                        <p class="text-success">R$ 180,99</p>
+                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
+                    </div>
+                </div>
+            </div>
 
-            <article id="Categoria1-Produto1">
-                <h3>Ração Gran Plus</h3>
-                <img src="img/raçãocachorro.webp" width="400" height="400" alt="Ração para cachorro">
-                <p>A Ração GranPlus Menu Light Frango e Arroz para Cães Adultos Raças Médias e Grandes é um alimento de
-                    alta qualidade, indicado para cães com tendência a engordar, indoor ou castrados, que tem como
-                    objetivo ajudá-los a manter o peso ideal, além de preservar a massa muscular. Sua fórmula foi
-                    especialmente desenvolvida com fibras funcionais, que garantem o controle da saciedade.</p>
-                <p> Preço = R$ 64,99 </p>
-            </article>
-
-            <article id="Categoria1-Produto2">
-                <h3>Ração Quatree Supreme Gatos Adultos</h3>
-                <img src="img/raçãogato.jpg" width="400" height="400" alt="Ração para gato">
-                <p>Armazene em um local fresco, seco, fora de contato com a luz solar direta e fora do alcance de
-                    animais de estimação</p>
-                <p>Preço = R$180,99 </p>
-
-            </article>
         </section>
 
-        <section id="Categoria2-Brinquedos">
-            <h2>BRINQUEDOS</h2>
+        <section id="Categoria2-Brinquedos" class="container mt-5">
+            <h2 class="text-center">BRINQUEDOS</h2>
 
-            <article id="Categoria2-Produto1">
-                <h3>Brinquedo Pet 3x1 Mordedor Osso Massageador Gengiva Removedor Tártaros Escova de Dente Para Cachorro
-                    Cão Pets</h3>
-                <img src="img/brinquedocachorro.jpg" width="400" height="400" alt="Brinquedo para cachorro">
-                <p>Saúde Bucal: A textura do material ajuda a remover a placa e o tártaro, promovendo dentes limpos e
-                    gengivas saudáveis.Estimulação Mental: Mantém seu cão entretido e desafiado, reduzindo
-                    comportamentos destrutivos e o tédio.Durabilidade: Feito com materiais resistentes, este brinquedo
-                    foi projetado para suportar as mordidas mais poderosas, garantindo horas de diversão.Design
-                    Atraente: O formato de osso é irresistível para os cães, tornando o momento da brincadeira ainda
-                    mais especial.</p>
-                <p>Preço = R$35,90 </p>
-            </article>
+            <div class="row">
 
-            <article id="Categoria2-Produto2">
-                <h3>Arranhador Para Gatos Poste Com Brinquedo Duplo Exclusivo (Bege)</h3>
-                <img src="img/brinquedogato.jpg" width="400" height="400" alt="Brinquedo para gato">
-                <p>O Arranhador Duo Square Cat é feito em madeira para maior durabilidade. O Sisal é de alta qualidade
-                    para seu gato arranhar por muito tempo. Pelúcia de alta qualidade e anti-alérgica ajudam a deixar o
-                    brinquedo lindo e ninguém espirra. Contém manual de instruções ilustrativo. Brinquedo removível e
-                    substituível.</p>
-                <p>Preço = R$40,00 </p>
-            </article>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/brinquedocachorro.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mordedor Osso 3x1</h5>
+                            <p class="card-text">
+                                Brinquedo resistente que ajuda na saúde bucal e reduz o estresse do pet.
+                            </p>
+                            <p class="text-success fw-bold">R$ 35,90</p>
+                            <button class="btn btn-primary mt-auto" onclick="comprar()">Comprar</button>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/brinquedogato.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Arranhador para Gatos</h5>
+                            <p class="card-text">
+                                Ideal para diversão e cuidado com as unhas do seu gato.
+                            </p>
+                            <p class="text-success fw-bold">R$ 40,00</p>
+                            <button class="btn btn-primary mt-auto" onclick="comprar()">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="Categoria3-Serviços" class="container mt-5">
+            <h2 class="text-center">SERVIÇOS</h2>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/banhoetosa.webp" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Banho e Tosa</h5>
+                            <p class="card-text">
+                                Higiene completa com conforto e segurança para seu pet.
+                            </p>
+                            <p class="text-success fw-bold">R$ 35 a R$ 130</p>
+
+                            <a href="formulario.html" class="btn btn-success mt-auto">
+                                Agendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/consultasveterinárias.webp" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Consulta Veterinária</h5>
+                            <p class="card-text">
+                                Avaliação completa da saúde do seu pet.
+                            </p>
+                            <p class="text-success fw-bold">A partir de R$ 100</p>
+
+                            <a href="formulario.html" class="btn btn-success mt-auto">
+                                Agendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
         <section>
-    <h3>Universo Pet</h3>
-    <p>Endereço: Rua Exemplo, 123 - Rio de Janeiro, RJ</p>
-    <p>Telefone: (21) 99999-9999</p>
-    <p>Email: contato@universopet.com</p>
-  </section>
+            <h3>Universo Pet</h3>
+            <p>Endereço: Rua Exemplo, 123 - Rio de Janeiro, RJ</p>
+            <p>Telefone: (21) 99999-9999</p>
+            <p>Email: contato@universopet.com</p>
+        </section>
 
-  <section>
-    <h4>Links</h4>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="contatos.html">Contato</a></li>
-      </ul>
-    </nav>
-  </section>
+        <section>
+            <h4>Links</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
 
-  <section>
-    <p>© 2026 - Desenvolvido por Guilherme Barbosa</p>
-  </section>
+        <section>
+            <p>© 2026 - Desenvolvido por Guilherme Barbosa</p>
+        </section>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
